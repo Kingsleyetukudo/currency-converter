@@ -8,6 +8,7 @@
     
 	let outData = ''
 document.querySelector('#formCkeck').addEventListener('submit', countCurrency)   
+ document.querySelector('#clear').addEventListener('click', clearOutput)
 
 	function countCurrency(e) {
         let amount = document.getElementById("money").value
@@ -32,11 +33,17 @@ document.querySelector('#formCkeck').addEventListener('submit', countCurrency)
 					console.log(cur)
 					outData += '<li>' + cur + '</li>'
 					document.getElementById('results').innerHTML = outData
-					document.querySelector('.total').innerHTML = amount
+					document.querySelector('.total').innerHTML = document.getElementById("money").value
 				}
         }
 
 		
         
     e.preventDefault()
+}
+
+function clearOutput() {
+	document.querySelector('#results').innerHTML = ''
+	document.querySelector('.total').innerHTML = ''
+    document.getElementById("money").value = ''
 }
