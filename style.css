@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+header{
+    background-color: #03034b;
+    padding: 1rem;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.container {
+    width: 50%;
+    margin: 2rem auto;
+    
+}
+
+.image-holder {
+    /* width: 100%; */
+    height: 100%;
+}
+
+.image-holder img {
+    width: 100%;
+    height: 100%;
+}
+
+.converter-space {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #8374D9;
+    color: #fff;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #03034b;
+    border-radius: 5px;
+    padding: 5rem 2rem;
+    width: 100%;
+    position: relative;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+label {
+    font-size: 2em;
+}
+
+button {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 50px);
+    box-shadow: 0 0px 2px #fff;
+    background-color: #01011b;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.outputted-results {
+    width: 100%;
+}
+
+#results {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: .5rem;
+}
+
+#results li {
+    border-bottom: 1px solid #000;
+    padding: 0 .5rem .5rem;
+}
+
+#results li:nth-child(1) {
+    border-top: 1px solid #000;
+    padding-top: .5rem;
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .converter-space {
+        width: 100%;
+    }
+
+.converter {
+    padding: 1rem 1rem 3rem;
+    gap: 1rem;
+}
+
+    .container {
+        width: 100%;
+    }
+
+    h2{ 
+        font-size: 1.3em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input {
+        font-size: .8em;
+        background-color: transparent;
+    }
+
+    button {
+        font-weight: 500;
+        padding: .5rem;
+        font-size: .8rem;
+        bottom: -15px;
+        left: calc(60% - 50px);
+    }
+}
+
+
+
+
